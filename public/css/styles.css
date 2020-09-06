@@ -1,0 +1,32 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.center{
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.setting-form{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.dashboard-card{
+  margin-left: 30%;
+  margin-right: 30%;
+}

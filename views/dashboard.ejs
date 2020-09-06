@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h2 class="display-3">Welcome to dashboard</h2>
+    <hr>
+    <div class="card text-center dashboard-card">
+      <div class="card-header">
+        <h4>Current Token</h4>
+      </div>
+      <div class="card-body">
+        <h1><%= currToken %></h1>
+      </div>
+      <div class="card-footer text-muted">
+        <h5><%= waitingListMsg %></h5>
+        <h5><%= nextButtonMsg %></h5>
+      </div>
+    </div>
+    <hr>
+    <form action="/next" method="post">
+      <button type="submit" class="btn btn-lg btn-dark">Next</button>
+    </form>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-light btn-lg" href="/settings" role="button">Settings</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

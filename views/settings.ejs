@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h2>Settings</h2>
+      <form action="/setLimit" method="post">
+        <div class="form-group setting-form">
+            <input type="number" name="maxCustomers" class="form-control" placeholder="Maximum limit">
+        </div>
+        <button class="btn btn-dark" type="submit" name="button">Set Max Limit</button>
+      </form>
+      <hr>
+      <form action="/reset" method="post">
+        <button class="btn btn-dark" type="submit" name="reset">Start New Session</button>
+      </form>
+      <hr>
+      <a class="btn btn-light" href="/dashboard" role="button">Dashboard</a>
+    </div>
+  </div>
+
+
+<%- include('partials/footer') %>
